@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    margin-top: 200px;
+    width: 150px;
+    height: 150px;
+    background: #000;
+    margin-left: 20px;
+    animation: mov 5s ease-out infinite alternate;
+}
+
+@keyframes mov {
+    from{
+        background: #000;
+        margin-left: 20px;
+        transform: rotate(0deg);
+    }
+    to{
+        background: rgb(245, 83, 83);
+        margin-left: 1000px;
+        transform: rotate(360deg);
+    }
+
+}
