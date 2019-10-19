@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.par1 {
+    width: 300px;
+    height: 300px;
+    background: rgb(236, 92, 92);
+}
+/* .par1 > .box {
+    width: 200px;
+    height: 200px;
+    background: #ff0;
+    margin-left: 200px;
+} */
+
+.par1 + .box {
+    cursor: grab;
+    width: 200px;
+    height: 200px;
+    background: #ff0;
+    margin-left: 200px;
+    transition: 1s ease-out;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background: #ff0;
+    font-size: 80px;
+    /* margin-left: 200px; */
+}
+.par1 + .box:hover {
+    background: #f0f;
+    color: #fff;
+    border-radius: 50%;
+    border: solid 2px #000;
+}
